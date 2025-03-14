@@ -1,0 +1,456 @@
+---
+title: "Optimizing Bellabeat’s Marketing & Product Strategy"
+author: "Dr. Irtwange N.B"
+date: "today"
+format: revealjs
+editor: visual
+---
+
+# Contents {#sec-contents- .scrollable}
+
+1.  Introduction
+2.  Business task
+3.  Analysis
+4.  Key insights summary
+5.  Recommendations
+6.  Conclusion
+
+# About Bellabeat {#sec-about-bellabeat .scrollable}
+
+-   **Founded:** 2013 by Urška Sršen & Sando Mur
+
+-   **Focus:** High-tech, health-smart products for women (activity, sleep, stress, & reproductive health)
+
+-   **Global Presence:** Expanded offices & product launches by 2016
+
+------------------------------------------------------------------------
+
+**Key Products:**
+
+1.  **Bellabeat App:** Tracks health data (activity, sleep, stress, menstrual cycle, mindfulness)
+2.  **Leaf:** Wearable tracker (bracelet/necklace/clip)
+3.  **Time:** Wellness watch with classic design
+4.  **Spring:** Smart water bottle monitoring hydration
+5.  **Membership:** Subscription for personalized health & wellness guidance
+
+# Business tasks {#sec-business-tasks}
+
+1)  Identify trends in smart device usage (from FitBit Fitness users).
+2)  Apply these trends to Bellabeat’s target customers.
+3)  Use the insights to guide Bellabeat’s marketing strategy.
+
+# Analysis {#sec-analysis .scrollable}
+
+-   **Exploratory Data Analysis (EDA)**
+
+1.  **Summarize the dataset** (number of participants, time range, key statistics)
+
+2.  **Distribution of activity levels** (average steps, calories burned, sedentary minutes)
+
+------------------------------------------------------------------------
+
+3.  **Correlation analysis** (e.g., relationship between steps and calories burned)
+
+-   **User Behavior Analysis** ( Daily Activity Pattern, Hourly Trends, Weekly Trends )
+
+-   **Sleep Analysis** ( Average sleep duration, Correlation between sleep and activity levels, Sleep quality patterns )
+
+-   **Calorie Burn & Intensity Analysis** ( Daily calorie burn trends, Relationship between intensity and calories burned, Impact of activity levels on calorie burn)
+
+-   **Sedentary Lifestyle Insights** (Time spent sedentary vs. active, Proportion of users with a sedentary lifestyle,How does sedentary time impact health metrics?)
+
+# **Exploratory Data Analysis (EDA)**
+
+---
+
+#### Data set summary
+
+**i. Participant Counts**
+
+| s/n | Data set       | Participants |
+|-----|----------------|--------------|
+| 1   | Activity Sleep | 30           |
+| 2   | Hourly data    | 30           |
+
+: Number of unique participants in each dataset (Fitbit users in the study)
+
+---
+
+**ii. Summary of Data Collection: Year, Months, and Days Recorded**
+
+| Year | Month | Days |
+|------|-------|------|
+| 2016 | May   | 12   |
+
+---
+
+**iii. Observation counts**
+
+| s/n | Dataset        | Observations |
+|-----|----------------|--------------|
+| 1   | Activity Sleep | 329          |
+| 2   | Hourly data    | 7486         |
+
+---
+
+**iv. Variable Summaries**
+
+**a. Summary statistics for variables of daily activity data.**
+
+| s/n | Variable                    | Min | Max      | Median  |
+|-----|-----------------------------|-----|----------|---------|
+| 1   | Total steps                 | 0   | 36019.00 | 7045.00 |
+| 2   | Total distance              | 0   | 28.03    | 4.97    |
+| 3   | Sedentary minutes           | 0   | 1440.00  | 1020.00 |
+| 4   | Total sleep records (mins)  | 1   | 2        | 1       |
+| 5   | Total minutes asleep (mins) | 58  | 796      | 439     |
+| 6   | Total time in bed (mins)    | 61  | 961      | 467     |
+
+# Correlation analysis {#sec-key-insights-summary}
+
+------------------------------------------------------------------------
+
+#### 1. **User Behavior** {#sec-1.-user-behavior}
+
+```{=html}
+<div class='tableauPlaceholder' id='viz1741728453168' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Us&#47;UserBehaviorAnalysisfortheBellabeatcasestudy&#47;DSD&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='UserBehaviorAnalysisfortheBellabeatcasestudy&#47;DSD' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Us&#47;UserBehaviorAnalysisfortheBellabeatcasestudy&#47;DSD&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1741728453168');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.minHeight='1000px';vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+```
+
+::: notes
+**Data**: Plot shows the overall steps taken by users.
+
+**Purpose**: To clearly display the distribution of different user activity levels.
+
+**User segmentation**
+
+-   Analysis shows that **over 60% of users** are **low-active or sedentary**, while only **about 15%** maintain high activity levels.
+
+-   **Step counts and active minutes** indicate a **right-skewed distribution**, meaning a **few highly active users elevate the average**, while the majority engage in **minimal movement.**
+:::
+
+------------------------------------------------------------------------
+
+```{=html}
+<div class='tableauPlaceholder' id='viz1741728492219' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Us&#47;UserBehaviorAnalysisfortheBellabeatcasestudy&#47;HourlyTrends&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='UserBehaviorAnalysisfortheBellabeatcasestudy&#47;HourlyTrends' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Us&#47;UserBehaviorAnalysisfortheBellabeatcasestudy&#47;HourlyTrends&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1741728492219');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.minHeight='1000px';vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+```
+
+::: notes
+**Hourly Trends**
+
+-   Users accumulate **most of their steps** during the **day**, with **peak activity occurring in the late afternoon and early evening (5 PM - 9 PM)**.
+
+-   **Morning activity increases steadily**, but **weekends and early mornings have significantly lower activity**.
+
+-   The heat map confirms that **weekday late-afternoon activity contributes most to overall calorie burn**.
+
+**Weekly Trends**
+
+-   **Weekdays show higher activity levels** than weekends, **indicating structured movement** during workdays.
+
+<!-- -->
+
+-   **Tuesday is the most active day**, likely due to **midweek motivation** or work-related movement.
+-   **Sunday is the least active day**, suggesting that users slow down for **rest and relaxation**.
+:::
+
+------------------------------------------------------------------------
+
+#### **User Behavior insights** {#sec-user-behavior-insights}
+
+From the analysis above, I have discovered;
+
+i\. **Routine-Driven Activity:** Users’ movement patterns follow daily and weekly routines, with **structured activity on workdays and relaxed behavior on weekends**.\
+
+ii. **Segmented User Base:** A large percentage of users are **low to moderately active**, presenting **an opportunity for interventions like step challenges or gamification** to boost engagement.
+
+------------------------------------------------------------------------
+
+#### 2. Sleep Patterns {#sec-2.-sleep-patterns}
+
+```{=html}
+<div class='tableauPlaceholder' id='viz1741728569433' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Av&#47;AverageSleepDurationvs_Recommended7-9Hours&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='AverageSleepDurationvs_Recommended7-9Hours&#47;Dashboard1' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Av&#47;AverageSleepDurationvs_Recommended7-9Hours&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1741728569433');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.minHeight='750px';vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+```
+
+::: notes
+-   The **average sleep duration** across **12 days is around 7 hours**, barely meeting the **recommended 7–9 hours**.
+-   Sleep patterns are **inconsistent**, with some days falling **significantly below 7 hours**, which could have **long-term health implications**.
+:::
+
+------------------------------------------------------------------------
+
+```{=html}
+<div class='tableauPlaceholder' id='viz1741728802024' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CorrelationAnalysisforBellabeat&#47;TAMXSD&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CorrelationAnalysisforBellabeat&#47;TAMXSD' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CorrelationAnalysisforBellabeat&#47;TAMXSD&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1741728802024');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.minHeight='1350px';vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+```
+
+::: notes
+-   **Moderate movement** supports **better sleep quality**, while **excessive inactivity reduces sleep duration**.
+
+<!-- -->
+
+-   Users with **higher activity levels** tend to experience **better sleep quality**, though the correlation is weak.
+:::
+
+------------------------------------------------------------------------
+
+#### Sleep Patterns **insights** {#sec-sleep-patterns-insights}
+
+1.  **Inconsistent Sleep Patterns:** The average sleep duration hovers at **7 hours**, which is **at the lower end of the recommended range** - this **could impact long-term health and recovery**.
+
+2.  **Activity and Sleep Relationship:**
+
+-   A **weak positive correlation** exists between **step count and sleep duration**.
+
+-   **Moderate sedentary time may support sleep**, but **excessive inactivity reduces sleep duration**.
+
+-   **Vigorous activity shows a slight positive effect on sleep duration**, potentially promoting **deeper rest**.
+
+------------------------------------------------------------------------
+
+#### 3. Calorie Burn {#sec-3.-calorie-burn}
+
+```{=html}
+<div class='tableauPlaceholder' id='viz1741729325623' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CorrelationAnalysisforBellabeat&#47;TAMXCB&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CorrelationAnalysisforBellabeat&#47;TAMXCB' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CorrelationAnalysisforBellabeat&#47;TAMXCB&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1741729325623');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.minHeight='1350px';vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+```
+
+::: notes
+-   **More steps and longer workouts** generally lead to **higher calorie burn**, but **intensity matters more than duration**.
+-   **Walking contributes to calorie burn**, but **it alone is not enough for significant energy expenditure**.
+:::
+
+------------------------------------------------------------------------
+
+```{=html}
+<div class='tableauPlaceholder' id='viz1741729302848' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CorrelationAnalysisforBellabeat&#47;SDXCB&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CorrelationAnalysisforBellabeat&#47;SDXCB' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CorrelationAnalysisforBellabeat&#47;SDXCB&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1741729302848');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.minHeight='1350px';vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+```
+
+::: notes
+**Longer sleep duration does not lead to higher calorie expenditure** - calorie burn depends more on **physical activity levels** than sleep.
+:::
+
+------------------------------------------------------------------------
+
+#### Calorie Burn **insights** {#sec-calorie-burn-insights}
+
+i\. **Intensity matters more than duration**—**high-intensity exercises burn more calories** in less time than low-intensity workouts.\
+
+ii. **Longer workout sessions may involve higher intensity**, but **this does not always mean more calories burned**. The **type of activity and intensity level determine effectiveness**.\
+
+iii. **Good sleep efficiency or duration does not directly boost calorie expenditure**.
+
+------------------------------------------------------------------------
+
+#### 4. Intensity Levels (Stress) {#sec-4.-intensity-levels}
+
+```{=html}
+<div class='tableauPlaceholder' id='viz1741729662056' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CorrelationAnalysisforBellabeat&#47;SXTI&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CorrelationAnalysisforBellabeat&#47;SXTI' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CorrelationAnalysisforBellabeat&#47;SXTI&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1741729662056');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.minHeight='1350px';vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+```
+
+::: notes
+-   **More steps lead to higher intensity**, reinforcing that **regular movement increases exertion**.
+-   **Longer workouts often involve higher intensity**, but **not all workouts lead to high calorie burn**.
+:::
+
+------------------------------------------------------------------------
+
+```{=html}
+<div class='tableauPlaceholder' id='viz1741729630121' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CorrelationAnalysisforBellabeat&#47;TIXSD&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CorrelationAnalysisforBellabeat&#47;TIXSD' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CorrelationAnalysisforBellabeat&#47;TIXSD&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1741729630121');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.minHeight='1350px';vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+```
+
+::: notes
+-   **Most users engage in moderate intensity levels**, with **few reaching extreme intensities**.
+-   **Higher total activity correlates with slightly shorter sleep duration**, possibly due to **exercise-related stress** or **difficulty winding down after intense workouts**.
+:::
+
+------------------------------------------------------------------------
+
+#### Intensity Levels (Stress) **insights** 
+
+i\. **More steps = higher intensity**, but **step count alone is not enough** to improve fitness.\
+
+ii. **Intensity is key for calorie burn** - **short but intense workouts are more effective** than long, low-intensity sessions.\
+
+iii. **High-intensity workouts may slightly improve sleep**, but **excessive exertion can reduce sleep duration**.
+
+------------------------------------------------------------------------
+
+#### 5. Effect of a Sedentary Lifestyle:
+
+```{=html}
+<div class='tableauPlaceholder' id='viz1741730434471' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CorrelationAnalysisforBellabeat&#47;SDMXTI&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CorrelationAnalysisforBellabeat&#47;SDMXTI' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CorrelationAnalysisforBellabeat&#47;SDMXTI&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1741730434471');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.minHeight='1350px';vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+```
+
+::: notes
+-   **A sedentary lifestyle significantly impacts calorie burn, sleep patterns, activity intensity, and overall health**.
+-   **The Sedentary Minutes vs. Total Intensities heat map shows an inverse trend**—as **sedentary time increases, total activity intensity decreases**.
+-   **More sedentary individuals engage in lower-intensity activities**, reinforcing that **prolonged sitting discourages movement**
+:::
+
+------------------------------------------------------------------------
+
+```{=html}
+<div class='tableauPlaceholder' id='viz1741730402018' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CorrelationAnalysisforBellabeat&#47;SDMXSD&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CorrelationAnalysisforBellabeat&#47;SDMXSD' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CorrelationAnalysisforBellabeat&#47;SDMXSD&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1741730402018');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.minHeight='1350px';vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+```
+
+::: notes
+**Moderate sedentary time supports sleep**, but **excessive inactivity leads to shorter sleep duration**, possibly due to **reduced physical tiredness or disrupted sleep cycles**.
+:::
+
+------------------------------------------------------------------------
+
+#### Sedentary **insights**
+
+i\. **Moderate sedentary time is not harmful**, but **excessive inactivity lowers calorie burn, reduces activity intensity, and shortens sleep duration.**
+
+ii\. **Prolonged sitting discourages movement**, leading to **a more inactive lifestyle**.
+
+# **Key Insights Summary**
+
+-   **User segmentation:** Highly active, moderately active, and inactive users.
+
+-   **Activity tracking** is the most used feature, followed by **calorie tracking**, while **sleep tracking** has untapped potential.
+
+-   Users are most active **in the evening (5-8 PM) and midweek (Tues-Thurs).**
+
+-   Inactive users require **motivation and structured engagement**.
+
+---
+
+#### **Target Audience Identification**
+
+-   **Who Are the Most Engaged Users? -** Highly active users engage consistently, while inactive users show low activity throughout the day.
+
+-   **Primary focus:** Moderately active users.
+
+-   **Secondary focus:** Inactive users.
+
+# Recommendations {#sec-recommendations .scrollable}
+
+**1. Enhance User Engagement & Activity Tracking**
+
+-   Personalized Activity Challenges
+
+-   Emphasize Quality over Quantity
+
+**2. Optimize Sleep and Recovery**
+
+-   Sleep Coaching and Consistency Programs
+
+-   Link Activity with Sleep Quality
+
+::: notes
+**1. Enhance User Engagement & Activity Tracking**
+
+-   **Personalized Activity Challenges:**
+
+**Why**: The Fitbit data reveal that over 60% of users are low-active or sedentary, with activity peaking on weekdays (especially Tuesday) and dipping on weekends.
+
+**How**: Implement gamified challenges such as “Weekend Walk Challenges” and daily step goals to encourage movement. Tailor notifications based on individual activity patterns to motivate users to increase both step count and active minutes.
+
+-   **Emphasize Quality over Quantity:**
+
+**Why**: Data show that while step counts provide a general measure, the intensity of activity plays a greater role in calorie burn and overall health.
+
+**How**: Introduce features that track and provide feedback on activity intensity (e.g., “High-Intensity Minutes”) and educate users on the benefits of short bursts of vigorous activity versus prolonged moderate exercise.
+
+**2. Optimize Sleep and Recovery**
+
+-   **Sleep Coaching and Consistency Programs:**
+
+**Why**: With an average sleep duration of around 7 hours, right at the lower limit of recommended levels users may face long-term health challenges if sleep remains inconsistent.
+
+**How**: Offer personalized sleep tips, regular bedtime reminders, and sleep hygiene content. Integrate sleep analysis to provide actionable insights (e.g., suggesting light evening stretches to improve sleep without compromising recovery).
+
+-   **Link Activity with Sleep Quality:**
+
+**Why**: Moderate activity correlates with better sleep, while excessive inactivity or overly intense workouts may disrupt sleep patterns.
+
+**How**: Develop an algorithm that suggests optimal activity levels during the day to promote restful sleep. For instance, if a user exhibits prolonged sedentary periods, prompt short movement breaks that can help boost sleep quality later.
+:::
+
+---
+
+**3. Focus on Reducing Sedentary Behavior**
+
+-   Regular Movement Alerts
+
+-   Educational Content on Inactivity Risks
+
+4.  **Integrate Stress Management and Mindfulness**
+
+-   Stress-Activity Balance Features
+
+-   Personalized Recommendations Based on Daily Patterns
+
+5.  **Leverage Data to Educate and Empower Users**
+
+-   Insight-Driven Education
+
+-   User Segmentation for Targeted Interventions
+
+::: notes
+**3. Focus on Reducing Sedentary Behavior**
+
+-   **Regular Movement Alerts:**
+
+**Why**: Prolonged sedentary behavior not only reduces calorie burn but is also linked with lower overall intensity and shorter sleep durations.
+
+**How**: Incorporate “stand up and move” alerts after long periods of inactivity. Use visual cues (e.g., heat maps) in the app to show users the impact of sedentary behavior on their daily intensity levels, and offer mini-challenges to break up extended sitting periods.
+
+-   **Educational Content on Inactivity Risks:**
+
+**Why**: Empowering users with knowledge about the negative health impacts of excessive sitting can drive behavioral change.
+
+**How**: Provide short articles, infographics, or videos explaining how moderate sedentary time can be acceptable, but excessive inactivity should be avoided to maintain a balanced, active lifestyle
+
+**4. Integrate Stress Management and Mindfulness**
+
+-   **Stress-Activity Balance Features:**
+
+**Why**: While increased physical activity generally improves overall health, the Fitbit data indicate that excessive high-intensity workouts may shorten sleep duration due to increased stress.
+
+**How**: Introduce mindfulness and stress-relief modules (such as guided meditation or breathing exercises) that activate when the app detects sustained high-intensity activity. This holistic approach is in line with Bellabeat’s wellness ethos.
+
+-   **Personalized Recommendations Based on Daily Patterns:**
+
+**Why**: The segmented user base and variable activity levels highlight the need for tailored recommendations rather than one-size-fits-all advice.
+
+**How**: Use machine learning to analyze individual user trends in activity, sleep, and sedentary behavior, then deliver personalized tips and stress management techniques accordingly.
+
+**5. Leverage Data to Educate and Empower Users**
+
+-   **Insight-Driven Education:**
+
+**Why**: Users benefit from understanding the interplay between activity intensity, calorie burn, and sleep quality.
+
+**How**: Create a dedicated section in the app that explains the statistical findings (e.g., correlations between steps and intensity, the impact of sedentary behavior on sleep) in user-friendly language. This empowers users to make informed decisions about their daily routines.
+
+-   **User Segmentation for Targeted Interventions:**
+
+**Why**: With a majority of users in the low to moderate activity bracket, personalized interventions can have a significant impact on overall engagement.
+
+**How**: Segment users into low-active, moderately active, and highly active groups, then deploy customized programs - ranging from simple movement reminders for low-active users to advanced performance tracking for highly active users.
+:::
+
+# Conclusion
+
+-   **Balancing Routine and Flexibility**
+
+-   **Intensity Over Duration**
+
+-   **Holistic Wellness Approach**
+
+-   **Data-Driven Personalization**
+
+::: notes
+The Fitbit analysis underscores the importance of balancing activity, sleep, and recovery. For Bellabeat, integrating these insights can lead to a more personalized and effective wellness experience:
+
+-   **Balancing Routine and Flexibility:** Encourage consistent physical activity during weekdays while addressing weekend inactivity with tailored challenges.
+
+-   **Intensity Over Duration:** Educate users that short, high-intensity sessions can be more beneficial than long, low-intensity workouts, thereby optimizing calorie burn and overall fitness.
+
+-   **Holistic Wellness Approach:** By combining activity tracking with sleep and stress management features, Bellabeat can deliver a comprehensive wellness solution that supports not only physical fitness but also mental well-being.
+
+-   **Data-Driven Personalization:** Leverage user data to segment and personalize recommendations, ensuring that each user receives insights and interventions that match their lifestyle and activity patterns.
+
+Implementing these recommendations will not only differentiate Bellabeat in the competitive wearable market but also **empower** users, especially **women** with actionable insights to lead healthier, more balanced lives.
+:::
