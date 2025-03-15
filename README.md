@@ -1,6 +1,7 @@
 # **BELLABEAT ANALYSIS CASE STUDY**
-## Dr. Irtwange Nguwasen Blessing
-## 2025-03-15
+Dr. Irtwange Nguwasen Blessing
+
+2025-03-15
 
 
 ## SCENARIO 
