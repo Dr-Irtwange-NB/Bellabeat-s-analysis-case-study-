@@ -1060,7 +1060,7 @@ While prolonged sedentary time does not significantly reduce calorie expenditure
 
 
 ```{r Daily activities, echo=FALSE, results='asis'}
-html_code <- HTML("
+htmltools::HTML("
 <div class='tableauPlaceholder' id='viz1741584384924' style='position: relative'>
   <noscript>
     <a href='#'>
@@ -1181,7 +1181,7 @@ The analysis of daily activity patterns reveals significant variations in user e
 
 
 ```{r Houly trends, echo=FALSE, results='asis'}
-html_code <- HTML("
+htmltools::HTML("
 <div class='tableauPlaceholder' id='viz1741584524347' style='position: relative'>
   <noscript>
     <a href='#'>
@@ -1311,7 +1311,7 @@ Encouraging Morning Activity: Since morning steps are lower, strategies like mor
 
 
 ```{r Weekly trends, echo=FALSE, results='asis'}
-html_code <- HTML("
+htmltools::HTML("
 <div class='tableauPlaceholder' id='viz1741584613427' style='position: relative'>
   <noscript>
     <a href='#'>
@@ -1439,7 +1439,7 @@ Weekend Activation: Develop weekend-specific strategies (like group challenges o
 
 
 ```{r Sleep analysis, echo=FALSE, results='asis'}
-html_code <- HTML("
+htmltools::HTML("
 <div class='tableauPlaceholder' id='viz1741588552879' style='position: relative'>
   <noscript>
     <a href='#'>
