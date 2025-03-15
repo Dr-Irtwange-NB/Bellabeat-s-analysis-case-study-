@@ -1,10 +1,14 @@
-# **BELLABEAT ANALYSIS CASE STUDY**
+# **BELLABEAT ANALYSIS CASE STUDY** 
+
 Dr. Irtwange Nguwasen Blessing
 
 2025-03-15
 
-
 ## SCENARIO 
+
+![Bellabeat](https://github.com/Dr-Irtwange-NB/Bellabeat-s-analysis-case-study-/blob/main/images/Bellabeat.png?raw=true)
+
+
 As a junior data analyst who joined the Bellabeat marketing analytics team 6 months ago, a high-tech manufacturer of health-focused products for women.I am tasked to analyze smart device usage data for a Bellabeat product to uncover trends in consumer behavior. The goal is to identify how people use non-Bellabeat smart devices and apply these insights to one of Bellabeat’s products. My findings will help shape Bellabeat’s marketing strategy and support its growth in the global smart device market.
 
 
